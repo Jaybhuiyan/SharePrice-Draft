@@ -1,0 +1,36 @@
+.message {
+    background-color: rgb(19, 244, 38);
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    margin-top: 10px;
+  }
+
+  .message-f {
+    
+    background-color: hwb(344 5% 4%);
+    padding: 10px;
+    border-radius: 5px;
+    width: fit-content;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search-button {
+    background-color: rgb(217, 221, 17);
+    font-size: 20px;
+
+    /* add any other styles you want here */
+  }
+
+  
+
+  .centered-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 30vw;
+  }

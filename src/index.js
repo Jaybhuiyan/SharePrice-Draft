@@ -1,17 +1,25 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom';
+import 'semantic-ui-css/semantic.min.css';
+import Clock from "./component/Clock";
+import App from "./component/App";
+import CompanyTable from "./component/CompanyTable";
+//import CenteredLayout from "./component/CenteredLayout";
+//import CompanyNameToTicker from "./component/CompanyNameToTicker";
+import StockData from "./component/StockData";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+const MainApp = () => {
+  return (
+    <div>
+      <Clock />
+      <StockData />
+      <App />
+      <CompanyTable />
+    </div>
+  );
+}
+
+ReactDOM.render(
+  <MainApp />,
+  document.querySelector('#root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
